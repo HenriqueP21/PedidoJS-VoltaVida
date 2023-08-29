@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volta Vida</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function sim(){
+            location.href = "https://youtube.com/shorts/umqFOANbKOY?si=1M2l-eZwAAozW6XY";
+        }
+        function esquivo(btn){
+            btn.style.position = 'absolute';
+            btn.style.bottom = posicao(10, 80);
+            btn.style.left = posicao(10, 80);
+        }
+        function posicao(min, max){
+            return (Math.random()*(max - min + min) + "%");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="titulo">
+        <h1 class="tituloPrincipal">
+            VOLTA VIDA
+        </h1>
+    </div>
+    <div class="botoes">
+        <div class="botaoS">
+            <button class="btn" onclick="sim()">SIM</button>
+        </div>
+        <div class="botaoN">
+            <button class="btn" onclick="esquivo(this)" onmouseover="esquivo(this)">NÃO</button>
+        </div>
+    </div>
+    <div class="img">
+        <img src="voltavida.jpg" alt="voltavida">
+    </div>
+</body>
+
+</html>
